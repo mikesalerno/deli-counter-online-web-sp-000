@@ -18,3 +18,13 @@ def take_a_number(katz_deli, name)
   katz_deli << name
   puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
 end
+
+def now_servicng(katz_deli)
+  if katz_deli.empty?
+    puts "There is nobody waiting to be serves!"
+  else
+    puts "Currently serving #{katz_deli.first}."
+    katz_delie.shift
+  end
+end
+  
